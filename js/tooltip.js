@@ -353,6 +353,7 @@
 
   Tooltip.prototype.destroy = function () {
     this.hide().$element.off('.' + this.type).removeData('bs.' + this.type)
+    this.tip().remove()
   }
 
 
